@@ -72,6 +72,13 @@ You can attach multiple EBS volumes to a single instance. The volume and instanc
 
 ![Image Alt](https://github.com/tonyaws2024/project-2/blob/1571d4f241062ae235f717cd77b8057d708addea/EBS%20Volume%20Attached%20to%20EC2.jpg)
 
+
+### Amazon EBS snapshots
+
+You can back up the data on your Amazon EBS volumes by making point-in-time copies, known as Amazon EBS snapshots. A snapshot is an incremental backup, which means that we save only the blocks on the volume that have changed since the most recent snapshot. This minimizes the time required to create the snapshot and saves on storage costs by not duplicating data.
+
+![Image Alt](https://github.com/tonyaws2024/project-2/blob/c8c08166bdb673812d355dc93404ecc2d93767e5/SNAPSHOTS.jpg)
+
 ### IAM
 
 An IAM role is an IAM identity that you can create in your account that has specific permissions. An IAM role is similar to an IAM user, in that it is an AWS identity with permission policies that determine what the identity can and cannot do in AWS. However, instead of being uniquely associated with one person, a role is intended to be assumable by anyone who needs it. Also, a role does not have standard long-term credentials such as a password or access keys associated with it. Instead, when you assume a role, it provides you with temporary security credentials for your role session. You can use roles to delegate access to users, applications, or services that don't normally have access to your AWS resources
@@ -98,12 +105,6 @@ When combined with the monitoring features of Amazon EventBridge and AWS CloudTr
 ![Image Alt](https://github.com/tonyaws2024/project-2/blob/76fa4958750f354094fef79b85dcc72409d78085/DLMPolicy.jpg)
 
 
-### Amazon EBS snapshots
-
-You can back up the data on your Amazon EBS volumes by making point-in-time copies, known as Amazon EBS snapshots. A snapshot is an incremental backup, which means that we save only the blocks on the volume that have changed since the most recent snapshot. This minimizes the time required to create the snapshot and saves on storage costs by not duplicating data.
-
-
-
 ### AWS Lambda
 
 You can use AWS Lambda to run code without provisioning or managing servers.
@@ -115,6 +116,26 @@ You organize your code into Lambda functions. The Lambda service runs your funct
 ***Below is the screen shot containing the lambda function used to send notification through SNS*
 
 ![Image Alt](https://github.com/tonyaws2024/project-2/blob/76fa4958750f354094fef79b85dcc72409d78085/DLMSnapshotNotifier.jpg)
+
+
+### Amazon EventBridge
+
+EventBridge is a serverless service that uses events to connect application components together, making it easier for you to build scalable event-driven applications. Event-driven architecture is a style of building loosely-coupled software systems that work together by emitting and responding to events. Event-driven architecture can help you boost agility and build reliable, scalable applications.
+
+Use EventBridge to route events from sources such as home-grown applications, AWS services, and third-party software to consumer applications across your organization. EventBridge provides simple and consistent ways to ingest, filter, transform, and deliver events so you can build applications quickly.
+
+![Image Alt](https://github.com/tonyaws2024/project-2/blob/76fa4958750f354094fef79b85dcc72409d78085/EBSVolumeBackup%20EventbridgeRule.jpg)
+
+
+### Amazon SNS
+
+Amazon Simple Notification Service (Amazon SNS) is a managed service that provides message delivery from publishers to subscribers (also known as producers and consumers). Publishers communicate asynchronously with subscribers by sending messages to a topic, which is a logical access point and communication channel. Clients can subscribe to the SNS topic and receive published messages using a supported endpoint type, such as Amazon Data Firehose, Amazon SQS, AWS Lambda, HTTP, email, mobile push notifications, and mobile text messages (SMS).
+
+![Image Alt](https://github.com/tonyaws2024/project-2/blob/76fa4958750f354094fef79b85dcc72409d78085/SNS-Subscription.jpg)
+
+
+
+
 
 
 
