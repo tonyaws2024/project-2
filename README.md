@@ -76,5 +76,51 @@ You can attach multiple EBS volumes to a single instance. The volume and instanc
 
 An IAM role is an IAM identity that you can create in your account that has specific permissions. An IAM role is similar to an IAM user, in that it is an AWS identity with permission policies that determine what the identity can and cannot do in AWS. However, instead of being uniquely associated with one person, a role is intended to be assumable by anyone who needs it. Also, a role does not have standard long-term credentials such as a password or access keys associated with it. Instead, when you assume a role, it provides you with temporary security credentials for your role session. You can use roles to delegate access to users, applications, or services that don't normally have access to your AWS resources
 
-![Image Alt]()
+![Image Alt](https://github.com/tonyaws2024/project-2/blob/76fa4958750f354094fef79b85dcc72409d78085/IAM%20Role.jpg)
+
+
+### Amazon Data Lifecycle Manager
+
+You can use Amazon Data Lifecycle Manager to automate the creation, retention, and deletion of EBS snapshots and EBS-backed AMIs. When you automate snapshot and AMI management, it helps you to:
+
+* Protect valuable data by enforcing a regular backup schedule.
+
+* Create standardized AMIs that can be refreshed at regular intervals.
+
+* Retain backups as required by auditors or internal compliance.
+
+* Reduce storage costs by deleting outdated backups.
+
+* Create disaster recovery backup policies that back up data to isolated Regions or accounts.
+
+When combined with the monitoring features of Amazon EventBridge and AWS CloudTrail, Amazon Data Lifecycle Manager provides a complete backup solution for Amazon EC2 instances and individual EBS volumes at no additional cost.
+
+![Image Alt](https://github.com/tonyaws2024/project-2/blob/76fa4958750f354094fef79b85dcc72409d78085/DLMPolicy.jpg)
+
+
+### Amazon EBS snapshots
+
+You can back up the data on your Amazon EBS volumes by making point-in-time copies, known as Amazon EBS snapshots. A snapshot is an incremental backup, which means that we save only the blocks on the volume that have changed since the most recent snapshot. This minimizes the time required to create the snapshot and saves on storage costs by not duplicating data.
+
+
+
+### AWS Lambda
+
+You can use AWS Lambda to run code without provisioning or managing servers.
+
+Lambda runs your code on a high-availability compute infrastructure and performs all of the administration of the compute resources, including server and operating system maintenance, capacity provisioning and automatic scaling, and logging. With Lambda, all you need to do is supply your code in one of the language runtimes that Lambda supports.
+
+You organize your code into Lambda functions. The Lambda service runs your function only when needed and scales automatically. You only pay for the compute time that you consume—there is no charge when your code is not running.
+
+***Below is the screen shot containing the lambda function used to send notification through SNS*
+
+![Image Alt](https://github.com/tonyaws2024/project-2/blob/76fa4958750f354094fef79b85dcc72409d78085/DLMSnapshotNotifier.jpg)
+
+
+
+
+
+
+
+
 
