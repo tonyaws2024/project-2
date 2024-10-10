@@ -70,4 +70,11 @@ You can use EBS volumes as primary storage for data that requires frequent updat
 
 You can attach multiple EBS volumes to a single instance. The volume and instance must be in the same Availability Zone. Depending on the volume and instance types, you can use Multi-Attach to mount a volume to multiple instances at the same time.
 
+![Image Alt](https://github.com/tonyaws2024/project-2/blob/1571d4f241062ae235f717cd77b8057d708addea/EBS%20Volume%20Attached%20to%20EC2.jpg)
+
+### IAM
+
+An IAM role is an IAM identity that you can create in your account that has specific permissions. An IAM role is similar to an IAM user, in that it is an AWS identity with permission policies that determine what the identity can and cannot do in AWS. However, instead of being uniquely associated with one person, a role is intended to be assumable by anyone who needs it. Also, a role does not have standard long-term credentials such as a password or access keys associated with it. Instead, when you assume a role, it provides you with temporary security credentials for your role session. You can use roles to delegate access to users, applications, or services that don't normally have access to your AWS resources
+
 ![Image Alt]()
+
