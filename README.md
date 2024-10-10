@@ -62,3 +62,12 @@ Amazon Elastic Compute Cloud (Amazon EC2) provides on-demand, scalable computing
 
 ![Image Alt](https://github.com/tonyaws2024/project-2/blob/7a3fab35945cbe9f8d6e6d44fc912f640abe1881/EC2%20Instance.jpg)
 
+### Amazon EBS volumes
+
+An Amazon EBS volume is a durable, block-level storage device that you can attach to your instances. After you attach a volume to an instance, you can use it as you would use a physical hard drive. EBS volumes are flexible. For current-generation volumes attached to current-generation instance types, you can dynamically increase size, modify the provisioned IOPS capacity, and change volume type on live production volumes.
+
+You can use EBS volumes as primary storage for data that requires frequent updates, such as the system drive for an instance or storage for a database application. You can also use them for throughput-intensive applications that perform continuous disk scans. EBS volumes persist independently from the running life of an EC2 instance.
+
+You can attach multiple EBS volumes to a single instance. The volume and instance must be in the same Availability Zone. Depending on the volume and instance types, you can use Multi-Attach to mount a volume to multiple instances at the same time.
+
+![Image Alt]()
